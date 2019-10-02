@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<table style="border: solid black; height: 600px; width: 700px;">
+    <tr>
+        <td colspan="2" style="border: solid #4f4f4f; height: 50px;" id="author_parent">
+            <div style="width: 100%; height: 100%; margin-top: 20px;" id="author">
+            <label>
+                Логин
+                <input id="login" style="width: 130px;">
+            </label>
+            <label>
+                Пароль
+                <input id="pass" style="width: 130px;">
+            </label>
+            <button id="login_in">LOGIN IN</button>
+            <button id="sign_up">SIGN UP</button>
+            <label>Статус: </label>
+            <label id="status">Офлайн</label>
+            </div>
+        </td>
+    </tr>
+    <tr id="chat_block">
+        <td style="border: solid black; width: 200px;">
+            <div style="width: 100%; height: 100%; overflow: auto">
+                <table style="width: 100%; height: 100%" id="left_bar">
+                    <tr style="height: 25px; width: 100%;">
+                        <td style="border-bottom: solid black;" id="user_top_bar">
+                            <label for="user_search">
+                                Поиск пользователя
+                            </label><input id="user_search" style="width: 150px; margin-bottom: 5px;">
+                            <button style="width: 20px; height: 20px" id="search_button">S</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="width: 100%; height: 100%; overflow: auto" id="user_list"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+        <td style="border: solid black; width: 500px; overflow: auto;">
+            <table style="height: 100%; width: 100%;" id="right_bar">
+            <tr>
+            <td style="border: solid black; width: 100%; height: 100%">
+                <table style="width: 100%; height: 100%">
+                    <tr style="height: 25px; width: 100%;">
+                        <td style="border-bottom: solid black;" id="chat_top_bar">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="width: 100%; height: 100%; overflow: auto">
+                                <ul id="messages">
+
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            </tr>
+                <tr>
+                    <td style="border: solid black; height: 50px;">
+                    <table style="height: 100px; width: 100%;" id="input_message_bar">
+                        <tr>
+                            <td>
+                              <textarea style="resize: none; height: 90%; width: 90%;" id="message"></textarea>
+                            </td>
+                            <td>
+                               <button style="height: 90%; width: 90%" id="send"></button>
+                            </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
